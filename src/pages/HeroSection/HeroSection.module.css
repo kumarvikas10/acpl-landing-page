@@ -163,10 +163,14 @@
     .trustBadges {
         flex-direction: row;
         gap: 8px;
-        font-size: 10px;
-        padding: 10px;
+        font-size: 8px;
+        padding: 8px;
         margin-bottom: 12px;
         border-radius: 10px;
+    }
+
+    .trustBadge{
+        gap: 4px;
     }
 
     .trustBadges>span {

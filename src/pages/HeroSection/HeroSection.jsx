@@ -32,8 +32,7 @@ const HeroSection = () => {
         <h1 className={styles.heroTitle}>
           Built for Tomorrow's Threats.
           <br />
-          <span className={styles.heroTitleRed}>
-           Delivered Today with CyberCare.
+          <span className={styles.heroTitleRed}> Delivered Today with CyberCare.
           </span>
         </h1>
 
