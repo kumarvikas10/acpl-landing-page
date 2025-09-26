@@ -1,0 +1,217 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0px;
+    text-align: center;
+    overflow: hidden;
+    background-image: url("../../assets/hero-background-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.trustBadges {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #6D0005;
+    border: 1px solid var(--color-primary);
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #A6A6A6;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.trustBadge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trustIcon {
+    width: 18px;
+}
+
+.heroContent {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.heroTitle {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.heroTitleRed {
+    color: var(--color-primary);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+    margin-bottom: 60px;
+}
+
+.statIcon {
+    width: 60px;
+}
+
+.statNumber {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.statLabel {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.ctaButtons a {
+    width: 250px;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 40px 60px;
+        min-height: 80vh;
+    }
+
+    .trustBadges {
+        gap: 12px;
+        font-size: 13px;
+        padding: 10px 18px;
+        margin-bottom: 40px;
+    }
+
+    .trustIcon {
+        width: 16px;
+    }
+
+    .heroContent {
+        max-width: 1000px;
+    }
+
+    .heroTitle {
+        font-size: 48px;
+        margin-bottom: 50px;
+        line-height: 1.2;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        margin-bottom: 50px;
+    }
+
+    .statIcon {
+        width: 52px;
+    }
+
+    .statNumber {
+        font-size: 36px;
+    }
+
+    .statLabel {
+        font-size: 15px;
+    }
+
+    .ctaButtons {
+        gap: 20px;
+    }
+
+    .ctaButtons a {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 20px;
+        min-height: auto;
+        margin-top: 40px;
+        padding-top: 80px;
+    }
+
+    .trustBadges {
+        flex-direction: row;
+        gap: 8px;
+        font-size: 10px;
+        padding: 10px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .trustBadges>span {
+        display: none;
+    }
+
+    .trustIcon {
+        width: 14px;
+    }
+
+    .heroTitle {
+        font-size: 24px;
+        margin-bottom: 24px;
+        line-height: 1.25;
+    }
+
+    .heroTitle br{
+        display: none;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .statIcon {
+        width: 40px;
+    }
+
+    .statNumber {
+        font-size: 20px;
+    }
+
+    .statLabel {
+        font-size: 12px;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        gap: 14px;
+        align-items: stretch;
+    }
+
+    .ctaButtons a {
+        width: 100%;
+    }
+}

@@ -1,0 +1,191 @@
+.partnersSection {
+    background: #2C0002;
+    padding: 75px 0px;
+    text-align: center;
+}
+
+.partnerStripWrap {
+    max-width: 1440px;
+    margin: 0 auto 48px;
+    overflow: hidden;
+    position: relative;
+    padding: 8px 0;
+    mask-image: linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%);
+}
+
+.partnerStripTrack {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation: partnerStripScroll 28s linear infinite;
+}
+
+.partnerStripWrap:hover .partnerStripTrack {
+    animation-play-state: paused;
+}
+
+.partnerStripImg {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+@keyframes partnerStripScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .partnerStripTrack {
+        animation: none;
+    }
+}
+
+.partnerStripWrap {
+    max-width: 1440px;
+    margin: 0 auto 48px;
+    overflow: hidden;
+    position: relative;
+    padding: 8px 0;
+    mask-image: linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%);
+}
+
+.partnerStripTrack {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation: partnerStripScroll 28s linear infinite;
+}
+
+.partnerStripWrap:hover .partnerStripTrack {
+    animation-play-state: paused;
+}
+
+.partnerStripImg {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+@keyframes partnerStripScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .partnerStripTrack {
+        animation: none;
+    }
+}
+
+.partnerKpiGrid {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+}
+
+.partnerKpiCard {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(228, 31, 38, 0.35);
+    border-radius: 10px;
+    padding: 48px 24px;
+    transition: all 0.3s ease;
+}
+
+.partnerKpiCard:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #e41f26;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(228, 31, 38, 0.15);
+}
+
+.kpiValue {
+    color: #e8494f;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.kpiText {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .partnersSection {
+        padding: 120px 40px;
+    }
+
+    .partnerStripWrap {
+        margin: 0 auto 40px;
+    }
+
+    .partnerStripImg {
+        height: 36px;
+    }
+
+    .partnerKpiGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+    }
+
+    .partnerKpiCard {
+        padding: 40px 24px;
+    }
+
+    .kpiValue {
+        font-size: 36px;
+    }
+
+    .kpiText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partnersSection {
+        padding: 40px 20px;
+    }
+
+    .partnerStripWrap {
+        margin: 0 auto 32px;
+    }
+
+    .partnerStripImg {
+        height: 28px;
+    }
+
+    .partnerKpiGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .partnerKpiCard {
+        padding: 24px 18px;
+    }
+
+    .kpiValue {
+        font-size: 32px;
+    }
+
+    .kpiText {
+        font-size: 12px;
+    }
+}

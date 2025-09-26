@@ -1,0 +1,407 @@
+.caseSection {
+    background: var(--color-background);
+    padding: 75px 0px;
+    text-align: center;
+}
+
+.caseGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    max-width: 1440px;
+    margin: 0 auto 36px;
+}
+
+.caseSection .caseCard.active {
+    background: linear-gradient(123.11deg, rgba(215, 0, 8, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    border-color: #e41f26;
+    box-shadow: 0 16px 54px rgba(228, 31, 38, 0.25);
+}
+
+.caseIcon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 14px;
+}
+
+.caseTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.caseMeta {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 16px;
+}
+
+.caseNumber {
+    font-size: 44px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.caseMetric {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 18px;
+}
+
+.caseProgress {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.caseBar {
+    height: 100%;
+    width: 75%;
+    background: linear-gradient(90deg, #e41f26 0%, rgba(228, 31, 38, 0.6) 100%);
+    animation: progressAnimation 2s ease-out;
+}
+
+.caseDetail {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(228, 31, 38, 0.3);
+    border-radius: 12px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 36px;
+    text-align: left;
+}
+
+.caseSummaryHead {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.caseSummaryIconWrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(228, 31, 38, 0.2);
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(228, 31, 38, 0.3);
+}
+
+.caseSummaryIcon {
+    width: 22px;
+    height: 22px;
+}
+
+.caseDetailTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 6px 0;
+}
+
+.caseDetailMeta {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.caseDetailBlock {
+    margin-top: 12px;
+}
+
+.caseDetailLabel {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.caseDetailList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+
+.caseDetailList li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.caseBullet {
+    color: #e41f26;
+    font-size: 12px;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+.caseResults {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.resultPills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.resultPill {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    padding: 16px 14px;
+    text-align: left;
+}
+
+.resultValue {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.resultLabel {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+}
+
+.caseQuote {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: #fff;
+}
+
+.caseQuoteText {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.caseQuoteAuthor {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    .caseSection {
+        padding: 120px 40px;
+    }
+
+    .caseGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 28px;
+        margin: 0 auto 28px;
+        max-width: 1000px;
+    }
+
+    .caseIcon {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .caseTitle {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .caseMeta {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .caseNumber {
+        font-size: 36px;
+        margin-bottom: 6px;
+    }
+
+    .caseMetric {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .caseDetail {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 28px;
+    }
+
+    .caseSummaryHead {
+        gap: 14px;
+        margin-bottom: 16px;
+        align-items: start;
+    }
+
+    .caseSummaryIconWrap {
+        width: 36px;
+        height: 36px;
+    }
+
+    .caseSummaryIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .caseDetailTitle {
+        font-size: 18px;
+    }
+
+    .caseDetailMeta {
+        font-size: 12px;
+    }
+
+    .caseDetailLabel {
+        font-size: 13px;
+    }
+
+    .caseDetailList li {
+        font-size: 15px;
+    }
+
+    .resultPills {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .resultPill {
+        padding: 14px 12px;
+    }
+
+    .resultValue {
+        font-size: 20px;
+    }
+
+    .resultLabel {
+        font-size: 12px;
+    }
+
+    .caseQuote {
+        padding: 14px 16px;
+    }
+
+    .caseQuoteText {
+        font-size: 13px;
+    }
+
+    .caseQuoteAuthor {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .caseSection {
+        padding: 80px 20px;
+    }
+
+    .caseGrid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    .caseIcon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .caseTitle {
+        font-size: 14px;
+    }
+
+    .caseMeta {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .caseNumber {
+        font-size: 32px;
+    }
+
+    .caseMetric {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .caseDetail {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .caseSummaryIconWrap {
+        width: 70px;
+        height: 50px;
+    }
+
+    .caseSummaryIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .caseDetailTitle {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .caseDetailMeta {
+        font-size: 12px;
+    }
+
+    .caseDetailLabel {
+        font-size: 14px;
+    }
+
+    .caseDetailList li {
+        font-size: 12px;
+    }
+
+    .resultPills {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .resultPill {
+        padding: 12px 10px;
+    }
+
+    .resultValue {
+        font-size: 18px;
+    }
+
+    .resultLabel {
+        font-size: 12px;
+    }
+
+    .caseQuote {
+        padding: 14px 12px;
+    }
+
+    .caseQuoteText {
+        font-size: 13px;
+    }
+
+    .caseQuoteAuthor {
+        font-size: 12px;
+    }
+
+    .caseSection a{
+        width: 100%;
+    }
+}
